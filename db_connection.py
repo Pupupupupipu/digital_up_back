@@ -1,6 +1,6 @@
 from sqlalchemy.ext.asyncio import create_async_engine, AsyncSession
 from sqlalchemy.orm import sessionmaker
-from back.config import settings
+from config import settings
 
 
 ur_a = settings.POSTGRES_DATABASE_URLA
