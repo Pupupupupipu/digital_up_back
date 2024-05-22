@@ -1,11 +1,11 @@
 from fastapi import APIRouter, Depends, HTTPException
-from back.db_connection import get_session
+from db_connection import get_session
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
-from back.models.models import User
-from back.models.schemas import User_create, User_patch
+from models.models import User
+from models.schemas import User_create, User_patch
 import bcrypt
-from back.config import settings
+from config import settings
 
 
 user_router = APIRouter(tags=["users"], prefix="/users")

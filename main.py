@@ -4,10 +4,10 @@ import uvicorn
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse
-from back.db_connection import init_db
-from back.routers.router_film import film_router
-from back.routers.router_user import user_router
-from back.routers.router_genre import genre_router
+from db_connection import init_db
+from routers.router_film import film_router
+from routers.router_user import user_router
+from routers.router_genre import genre_router
 
 
 app = FastAPI()

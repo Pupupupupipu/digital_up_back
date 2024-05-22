@@ -5,9 +5,9 @@ from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 from fastapi.responses import JSONResponse
 
-from back.db_connection import get_session
+from db_connection import get_session
 
-from back.models.models import Film
+from models.models import Film
 
 
 

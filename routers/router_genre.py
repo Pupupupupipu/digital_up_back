@@ -1,8 +1,8 @@
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
-from back.db_connection import get_session
-from back.models.models import Genre
+from db_connection import get_session
+from models.models import Genre
 
 genre_router = APIRouter(tags=['genre'], prefix='/genre')
 
