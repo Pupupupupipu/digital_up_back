@@ -1,4 +1,5 @@
 from pydantic import BaseModel
+from enum import Enum
 
 class User_create(BaseModel):
     login: str

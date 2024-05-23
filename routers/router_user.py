@@ -20,7 +20,7 @@ async def create_user(
     item: User_create,
     db: AsyncSession=Depends(get_session)):
     try:
-        print("saltsaltsalt", salt)
+
         existing_user = await db.execute(select(User).filter(User.login == item.login))
         existing_user = existing_user.scalars().all()
 
