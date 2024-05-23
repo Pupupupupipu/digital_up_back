@@ -15,9 +15,9 @@ app = FastAPI()
 # Add CORS middleware to allow requests from all origins
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],  # Update this with the origin of your frontend
+    allow_origins=["https://digital-up-front.onrender.com/"],  # Update this with the origin of your frontend
     allow_credentials=True,
-    allow_methods=["GET", "POST", "PUT", "DELETE"],
+    allow_methods=["GET", "POST", "PUT", "PATCH", "DELETE"],
     allow_headers=["*"],
 )
 #init_db()
