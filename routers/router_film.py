@@ -7,7 +7,6 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from fastapi.responses import JSONResponse
 
 from db_connection import get_session
-from models.schemas import Film_create
 from models.models import Film
 
 
